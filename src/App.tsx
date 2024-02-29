@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { cnApp } from './App.classname';
+import { Counter } from './components/Counter/Counter';
+import { Square } from './components/Square/Square';
+import { StringLimit } from './components/StringLimit/StringLimit';
+import { Emoji } from './components/Emoji/Emoji';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={cnApp()}>
+      <h1 className={cnApp('title')}>8.2 Обработка событий в React</h1>
+
+      <h2 className={cnApp('task-title')}>Плюсуем</h2>
+      <Counter />
+
+      <h2 className={cnApp('task-title')}>Прыг-скок</h2>
+      <Square />
+
+      <h2 className={cnApp('task-title')}>Не наглей</h2>
+      <StringLimit />
+
+      <h2 className={cnApp('task-title')}>Щекотно</h2>
+      <Emoji />
     </div>
   );
 }

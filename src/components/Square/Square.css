@@ -1,0 +1,22 @@
+.Square-container {
+  position: relative;
+
+  height: 55px;
+}
+
+.Square {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  transition: background-color 1.5s, left 1.5s;
+}
+
+.Square_position_start {
+  left: 0;
+  background-color: #195fc1;
+}
+
+.Square_position_end {
+  left: calc(100% - 50px);
+  background-color: #c11919;
+}
