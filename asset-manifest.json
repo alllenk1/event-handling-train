@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/event-handling-train/static/css/main.b01abd93.css",
+    "main.js": "/event-handling-train/static/js/main.185a72fb.js",
+    "index.html": "/event-handling-train/index.html",
+    "main.b01abd93.css.map": "/event-handling-train/static/css/main.b01abd93.css.map",
+    "main.185a72fb.js.map": "/event-handling-train/static/js/main.185a72fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b01abd93.css",
+    "static/js/main.185a72fb.js"
+  ]
+}
