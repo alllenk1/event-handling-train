@@ -10,17 +10,19 @@ const Counter = () => {
 
   const handleCounter = () => {
     if (Number(value)) {
-      setCount((prevCount) => prevCount + Number(value));
+      setCount((prev) => prev + Number(value));
     } 
+
+    setValue('');
   }
 
   const handleChangeInput = (event: ChangeEvent<HTMLInputElement>) => {
-    setValue(() => event.target.value);
+    setValue(event.target.value);
   }
 
   return (
     <div className={cnCounter()}>
-      <input className={cnCounter('input')} type="text" onChange={handleChangeInput}/>
+      <input className={cnCounter('input')} onChange={handleChangeInput} value={value} type="text"/>
       <div className={cnCounter('container')}>
         <button className={cnCounter('button')} onClick={handleCounter}>+</button>
         <span className={cnCounter('result')}>{count}</span>
